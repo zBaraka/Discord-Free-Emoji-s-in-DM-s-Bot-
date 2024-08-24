@@ -1,12 +1,11 @@
 # Discord Emoji Bot
 
 This bot responds to commands by sending specific emojis.
-## This works without Discord nitro
-This bot is for non-nitro users.
-Note that it might not work in some servers, but it will work in DMs GDMs and most servers.
+## This works without Discord Nitro
+This bot is for non-Nitro users.
+Note that it might not work in some servers, but it will work in DMs, GDMs, and most servers.
 
 ![example](https://github.com/user-attachments/assets/2b601492-31dc-42c2-aed3-caa8113d02b4)
-
 
 Follow the instructions below to install, configure, and run the bot.
 
@@ -17,7 +16,7 @@ Follow the instructions below to install, configure, and run the bot.
 1. **Enable User Installation**
    - Navigate to your bot's settings on the Discord Developer Portal.
    - Go to your bot > `Installation`.
-   - Enable allow users to install your bot.
+   - Enable "Allow users to install your bot."
    - Here’s the link to your bot’s installation settings:
      ```
      https://discord.com/developers/applications/[bot-id]/installation
@@ -99,6 +98,13 @@ Follow the instructions below to install, configure, and run the bot.
        // Add more commands as needed
    ];
    ```
+
+### Step 3: Enable Server Members Intent
+
+1. **Activate the Required Intent**
+   - In the Discord Developer Portal, navigate to your bot's settings.
+   - Under the "Bot" tab, scroll down to "Privileged Gateway Intents."
+   - Activate the "Server Members Intent." 
 
 ## Running the Bot
 
