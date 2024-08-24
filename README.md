@@ -63,6 +63,11 @@ Follow the instructions below to install, configure, and run the bot.
    - Once an emoji is uploaded, click the "Copy Markdown" button (found next to the delete button for each emoji).
    - This copies the markdown for the emoji, which looks something like `<:emojiName:emojiID>`.
 
+4. Enable Server Members Intent
+   - In the Discord Developer Portal, navigate to your bot's settings.
+   - Under the "Bot" tab, scroll down to "Privileged Gateway Intents."
+   - Activate the "Server Members Intent." 
+
 ### Step 2: Update the Bot Code with Emojis
 
 1. **Locate the Emoji Commands Section**
@@ -99,12 +104,6 @@ Follow the instructions below to install, configure, and run the bot.
    ];
    ```
 
-### Step 3: Enable Server Members Intent
-
-1. **Activate the Required Intent**
-   - In the Discord Developer Portal, navigate to your bot's settings.
-   - Under the "Bot" tab, scroll down to "Privileged Gateway Intents."
-   - Activate the "Server Members Intent." 
 
 ## Running the Bot
 
