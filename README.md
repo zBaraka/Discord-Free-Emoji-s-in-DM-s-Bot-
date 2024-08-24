@@ -4,6 +4,7 @@ This bot responds to commands by sending specific emojis.
 ## This works without Discord nitro
 This bot is for non-nitro users.
 Note that it might not work in some servers, but it will work in DMs GDMs and most servers.
+
 ![example](https://github.com/user-attachments/assets/2b601492-31dc-42c2-aed3-caa8113d02b4)
 
 
