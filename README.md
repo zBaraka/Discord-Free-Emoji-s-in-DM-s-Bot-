@@ -43,7 +43,7 @@ Follow the instructions below to install, configure, and run the bot.
    - Navigate to the directory where you downloaded the bot's code.
    - Run the following command to install the necessary npm packages:
      ```bash
-     npm install discord.js @discordjs/rest discord-api-types
+     npm install discord.js @discordjs/rest discord-api-types axios
      ```
 
 ## Configuration
@@ -68,55 +68,18 @@ Follow the instructions below to install, configure, and run the bot.
    - Under the "Bot" tab, scroll down to "Privileged Gateway Intents."
    - Activate the "Server Members Intent." 
 
-### Step 2: Update the Bot Code with Emojis
-
-1. **Locate the Emoji Commands Section**
-   - In the bot code, find the `emojiCommands` object. This is where you will define which emojis correspond to which commands.
-
-2. **Add Your Emojis**
-   - For each command, replace the placeholder `<exampleX>` with the markdown you copied for the corresponding emoji.
-   - Ensure that the command names in the `emojiCommands` object match the command names in the `commands` array below.
-
-   Example:
-   ```javascript
-   const emojiCommands = {
-       'smiley': '<:smiley:123456789>',
-       'wink': '<:wink:987654321>',
-       // Add more commands as needed
-   };
-   ```
-
-3. **Update Command Names and Descriptions**
-   - Ensure that each command in the `commands` array has a matching entry in the `emojiCommands` object. The command name must be lowercase and should not contain any spaces.
-
-   Example:
-   ```javascript
-   const commands = [
-       {
-           name: 'smiley',
-           description: 'Responds with the "Smiley Emoji"',
-       },
-       {
-           name: 'wink',
-           description: 'Responds with the "Wink Emoji"',
-       },
-       // Add more commands as needed
-   ];
-   ```
-
-
 ## Running the Bot
 
 After you've configured the emojis:
 
-1. Save the changes in your bot's code.
-2. Run the bot using Node.js:
+1. Run the bot using Node.js:
    ```bash
    node emoji.js
    ```
-3. Your bot should now respond to the specified commands with the corresponding emojis.
+2. Your bot should now respond to the specified commands with the corresponding emojis.
 
 ## Notes
 
 - Ensure your bot is running continuously. It will only work while this code is running. You can also use a hosting service.
 - If you add or change emojis later, update the code accordingly and re-run the bot to apply the changes.
+- In older version's of the code you had to manuelly add the emoji's to the code. When using the new version, it's enough to restart the bot afer uploading them to the dashboard.
